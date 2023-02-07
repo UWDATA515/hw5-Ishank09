@@ -4,6 +4,7 @@
 # R0912: Too many branches (17/12) (too-many-branches)
 """
 Module to calculate knn
+imports: numpy
 """
 
 import numpy as np
@@ -27,6 +28,7 @@ def knn_regression(n_neighbors, data, query):
 
     try:
 
+        # Checking the validiy of parameters 
         if not isinstance(n_neighbors, int):
             raise ValueError("n_neighbors is not an integer.")
         if n_neighbors <= 0:
