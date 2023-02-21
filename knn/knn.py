@@ -28,7 +28,7 @@ def knn_regression(n_neighbors, data, query):
 
     try:
 
-        # Checking the validiy of parameters 
+        # Checking the validiy of parameters
         if not isinstance(n_neighbors, int):
             raise ValueError("n_neighbors is not an integer.")
         if n_neighbors <= 0:
